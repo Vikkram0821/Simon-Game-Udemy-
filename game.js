@@ -52,6 +52,8 @@ function nextSequence(){
   level++;
 
     $("#level-title").text("level "+level);
+
+    //Generating Random Num
     var randomNumber = Math.trunc(Math.random()*4);
 
     var randomChosenColour = buttonColours[randomNumber];
@@ -70,13 +72,13 @@ $(".btn").click(function(){
     animatePress(userChosenColour);
   
     checkAnswer(userClickedPattern.length-1);
-
+    console.log(userClickedPattern.length);
+    console.log(userClickedPattern);
 })
 
 // Audio Play
 function playSound(name){
 var audio = new Audio ("sounds/"+name+".mp3");
-
 audio.play();
 }
 
@@ -87,6 +89,7 @@ setTimeout(function(){
     $("#"+currentColor).removeClass("pressed")
 },100);
 };
+
 
 //StartOver
 
