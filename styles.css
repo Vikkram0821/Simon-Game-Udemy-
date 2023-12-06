@@ -52,3 +52,31 @@ body {
     background-color: grey;
   }
   
+  @media screen and (max-width:1000px){
+    .container{
+      display: flex;
+      margin-top: 20vh;
+    }
+    #level-title{
+      margin-top: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .green{
+      padding: 20px;
+      margin: 10px;
+    }
+    .yellow{
+      padding: 20px;
+      margin: 10px;
+    }
+    .red{
+      padding: 20px;
+      margin: 10px;
+    }
+    .blue{
+      padding: 20px;
+      margin: 10px;
+    }
+  }
